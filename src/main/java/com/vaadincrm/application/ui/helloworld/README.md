@@ -1,4 +1,5 @@
-package com.vaadincrm.application.views.helloworld;
+#THIS IS THE CONTENT THAT HAS BEEN PREVIOUSLY IN THE MAINVIEW.JAVA CLASS
+package com.vaadincrm.application.ui.helloworld;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;

@@ -11,8 +11,8 @@ import com.vaadin.flow.component.sidenav.SideNav;
 import com.vaadin.flow.component.sidenav.SideNavItem;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.theme.lumo.LumoUtility;
-import com.vaadincrm.application.views.about.AboutView;
-import com.vaadincrm.application.views.helloworld.MainView;
+
+import com.vaadincrm.application.ui.MainView;
 import org.vaadin.lineawesome.LineAwesomeIcon;
 
 /**
@@ -52,8 +52,6 @@ public class MainLayout extends AppLayout {
         SideNav nav = new SideNav();
 
         nav.addItem(new SideNavItem("Hello World", MainView.class, LineAwesomeIcon.GLOBE_SOLID.create()));
-        nav.addItem(new SideNavItem("About", AboutView.class, LineAwesomeIcon.FILE.create()));
-
         return nav;
     }
 
