@@ -1,5 +1,4 @@
-package com.vaadincrm.application.backend;
-import com.vaadincrm.application.backend.AbstractEntity;
+package com.vaadincrm.application.backend.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 
