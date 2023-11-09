@@ -13,10 +13,9 @@ import org.springframework.context.annotation.ComponentScan;
  * and some desktop browsers.
  *
  */
-@SpringBootApplication
 @Theme(value = "vaadin.app")
-@ComponentScan(basePackages = {"com.vaadincrm.application", "com.vaadincrm.application.backend", "com.vaadincrm.application.backend.repository"})
-
+@SpringBootApplication
+@ComponentScan("com.vaadincrm.application.backend.repository")
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
