@@ -1,14 +1,17 @@
 package com.vaadincrm.application.backend.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.util.LinkedList;
 import java.util.List;
 
 @Entity
 public class Company {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     private String name;
     @OneToMany(mappedBy = "company", fetch = FetchType.EAGER)
     private List<Contact> employees = new LinkedList<>();
