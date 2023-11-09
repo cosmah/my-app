@@ -15,7 +15,8 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @Theme(value = "vaadin.app")
 @SpringBootApplication
-@ComponentScan("com.vaadincrm.application.backend.repository")
+@ComponentScan(basePackages = {"com.vaadincrm.application.backend.repository", "com.vaadincrm.application.backend.service"})
+
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
