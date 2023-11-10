@@ -9,18 +9,19 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * The entry point of the Spring Boot application.
  *
- * Use the @PWA annotation make the application installable on phones, tablets
+ * Use the @PWA annotation to make the application installable on phones, tablets,
  * and some desktop browsers.
  *
  */
 @Theme(value = "vaadin.app")
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.vaadincrm.application.backend.repository", "com.vaadincrm.application.backend.service"})
-
+@ComponentScan(basePackages = {
+    "com.vaadincrm.application.backend.repository",
+    "com.vaadincrm.application.backend.service"
+})
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
 }
