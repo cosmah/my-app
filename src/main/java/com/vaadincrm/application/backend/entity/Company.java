@@ -6,8 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Entity
-public class Company {
-
+public class Company extends AbstractEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

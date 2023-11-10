@@ -17,7 +17,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {
     "com.vaadincrm.application.backend.repository",
-    "com.vaadincrm.application.backend.service"
+    "com.vaadincrm.application.backend.service",
+    "com.vaadincrm.application.ui" // Add the package of MainView and other UI components
 })
 public class Application implements AppShellConfigurator {
 
