@@ -88,11 +88,18 @@
             <artifactId>jakarta.persistence-api</artifactId>
             <version>3.2.0-B02</version>
         </dependency>
+       
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-jpa</artifactId>
-            <version>3.1.5</version>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -140,23 +147,7 @@
                     </exclusions>
                 </dependency>
 
-                <dependency>
-                    <groupId>com.h2database</groupId>
-                    <artifactId>h2</artifactId>
-                    <scope>runtime</scope>
-                </dependency>
-
-                <dependency>
-                    <groupId>jakarta.persistence</groupId>
-                    <artifactId>jakarta.persistence-api</artifactId>
-                    <version>3.2.0-B02</version>
-                </dependency>
-
-                <dependency>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-data-jpa</artifactId>
-                </dependency>
-
+               
 
 
             </dependencies>

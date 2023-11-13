@@ -2,7 +2,7 @@ package com.vaadincrm.application.backend.repository;
 
 import com.vaadincrm.application.backend.entity.Contact;
 import org.springframework.data.jpa.repository.*;
-import org.springframework.data.repository.query.Param;
+import org.springframework.data.*;
 
 import java.util.List;
 
